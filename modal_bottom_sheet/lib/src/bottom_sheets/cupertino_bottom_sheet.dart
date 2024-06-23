@@ -216,6 +216,7 @@ class CupertinoModalBottomSheetRoute<T> extends ModalSheetRoute<T> {
       builder: (context, child) => Transform.translate(
         offset: Offset(0, offsetY),
         child: Transform.scale(
+            filterQuality: FilterQuality.none,
           scale: scale,
           child: child,
           alignment: Alignment.topCenter,
